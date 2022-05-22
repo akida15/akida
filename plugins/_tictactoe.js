@@ -67,14 +67,8 @@ ${isWin ? `@${winner.split('@')[0]} لقد فزت (+${winScore} اكس بي)` : 
             if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
                 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
             if (room.x !== room.o) await this.sendButton(room.x, str, author, 'استسلم', 'استسلم', m, {
-                contextInfo: {
-                    mentionedJid: this.parseMention(str)
-                }
             })
             await this.sendButton(room.o, str, author, 'استسلم', 'استسلم', m, {
-                contextInfo: {
-                    mentionedJid: this.parseMention(str)
-                }
             })
             if (isTie || isWin) {
                 users[room.game.playerX].exp += playScore
