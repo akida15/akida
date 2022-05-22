@@ -35,14 +35,8 @@ ${arr.slice(6).join('')}
 اختر  *استسلم * للاستسلام
 `.trim()
         if (room.x !== room.o) await this.sendButton(room.x, str, author, 'استسلم', 'استسلم', m, {
-            contextInfo: {
-                mentionedJid: this.parseMention(str)
-            }
         })
         await this.sendButton(room.o, str, author, 'استسلم', 'استسلم', m, {
-            contextInfo: {
-                mentionedJid: this.parseMention(str)
-            }
         })
     } else {
         room = {
@@ -53,14 +47,14 @@ ${arr.slice(6).join('')}
             state: 'WAITING'
         }
         if (text) room.name = text
-        m.reply('في انتظار الشريك' + (text ? ` اكتب الأمر أدناه
+        m.reply('انتظر يجي لاعب اخر' + (text ? ` اكتب الأمر أدناه
 ${usedPrefix}${command} ${text}` : ''))
         conn.game[room.id] = room
     }
 }
 
 handler.help = ['اكس_او', 'اكس_او'].map(v => v + ' []')
-handler.tags = ['game']
+handler.tags = ['الاوامر']
 handler.command = /^اكس_او$/
 
 module.exports = handler
