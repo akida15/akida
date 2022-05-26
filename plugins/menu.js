@@ -3,7 +3,6 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
   'الاوامر': 'الاوامر',
-  '': 'No Category',
 }
 const defaultMenu = {
   before: `
@@ -22,7 +21,7 @@ const defaultMenu = {
   body: '│ • %cmd %islimit %isPremium',
   footer: '\n',
   after: `
-*%npmname@^%version*
+*%npmname@*
 ${'```%npmdesc```'}
 `,
 }
