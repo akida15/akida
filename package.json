@@ -1,7 +1,7 @@
 {
-  "name": "wabot-aq",
+  "name": "jiraya-bot",
   "version": "2.5.1",
-  "description": "Customizable WhatsApp Bot",
+  "description": "العم جيرايا وترين 💙",
   "depecrated": false,
   "main": "index.js",
   "directories": {
