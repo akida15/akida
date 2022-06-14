@@ -11,7 +11,6 @@ const defaultMenu = {
 │ السلام عليكم ورحمه الله وبركاته
 │ المطور : جيرايا
 │ رقم المطور : wa.me/+34613110267
-│ رقم تلميذي : wa.me/+31624789483
 │ قروب البوت :https://chat.whatsapp.com/BSOfsSGjwzs0bXMPsOKQoz
 
 ⏣|━─━─━⏣⊰الاوامر قيد التعديل⊱⏣━─━─━|⏣
@@ -127,7 +126,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     throw e
   }
 }
-handler.help = ['جيرايا', 'اوامر', 'ترين']
+handler.help = ['11جيرايا11', 'اوامر11', 'ترين']
 handler.tags = ['لطلب الاوامر اكتب :']
 handler.command = /^(اوامر|جيرايا|ترين)$/i
 handler.owner = false
